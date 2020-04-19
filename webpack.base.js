@@ -13,15 +13,10 @@ module.exports = {
             'node_modules',
             path.join(process.cwd(), 'node_modules')
         ],
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
+        extensions: ['.js', '.ts', '.tsx']
     },
     module: {
         rules: [
-            {
-                test: /\.jsx?$/,
-                loader: require.resolve('babel-loader'),
-                exclude: /node_modules/
-            },
             {
                 test: /\.tsx?/i,
                 loader: 'ts-loader',
